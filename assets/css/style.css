@@ -150,6 +150,11 @@ html {
     display: inline-block;
 }
 
+.header .nav__contact {
+
+    float: right;
+}
+
 .header .nav__middle a {
     font-size: 14px;
     color: white;
@@ -326,6 +331,9 @@ html {
     margin-right: 52px;
     color: var(--color-web);
     margin-top: 16px;
+}
+.flash-sale .flash-sale-items .plus-icon:hover {
+    opacity: 0.7;
 }
 
 .flash-sale .flash-sale-items .price {
