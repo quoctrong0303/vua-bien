@@ -41,6 +41,10 @@ html {
     width: 66.6666%;
 }
 
+.col-4 {
+    width: 33.3333%;
+}
+
 .clear {
     clear: both;
 }
@@ -302,9 +306,6 @@ html {
     padding-top: 36px;
 }
 
-.center-item {
-    margin: auto;
-}
 .flash-sale .flash-sale-items img {
     height: 240px;
     width: 240px;
@@ -358,3 +359,6 @@ html {
     text-align: center;
     position: relative;
 }
+
+
+/* Combo */
