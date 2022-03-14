@@ -302,6 +302,9 @@ html {
     padding-top: 36px;
 }
 
+.center-item {
+    margin: auto;
+}
 .flash-sale .flash-sale-items img {
     height: 240px;
     width: 240px;
@@ -340,6 +343,7 @@ html {
     border-radius: 2rem;
 }
 .flash-sale .flash-sale-items .quantity-sale {
+    display: inline-block;
     background-color: var(--color-web);
     width: 15%;
     border-radius: 2rem 0 0 2rem;
@@ -348,7 +352,9 @@ html {
 .flash-sale .flash-sale-items .process-sale p {
     color: white;
     font-size: 12px;
+    display: inline-block;
     line-height: 16px;
+    margin-left: 48px;
     text-align: center;
-
+    position: relative;
 }
