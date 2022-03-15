@@ -2,14 +2,28 @@
 
 :root {
     --color-web: #b31e2d;
+    --footer-color: #ce1e2d;
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .pr-12 {
     padding-right: 12px;
+}
+
+.pr-24 {
+    padding-right: 24px;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.d-flex {
+    display: flex;
 }
 
 .col-full {
@@ -83,6 +97,14 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+        /* border-box: thuộc tính width và height
+        sẽ tự động bao gồm luôn content, padding
+        và border, còn chiều rộng của content sẽ
+        tự động co giãn tương ứng nếu chúng ta 
+        thay đổi padding và border, đảm bảo kích 
+        thước của cả element sẽ không thay đổi, 
+        đồng nghĩa với việc layout tổng sẽ không
+            thay đổi. */
 }
 /* Header */
 .header {
@@ -264,11 +286,33 @@ html {
     padding-top: 20px;
 }
 
+
+
 .banner2 img {
     width: 100%;
 }
 
 .banner2 img:hover {
+    cursor: pointer;
+}
+
+
+
+
+.banner3 img {
+    width: 100%;
+}
+
+.banner3 img:hover {
+    cursor: pointer;
+}
+
+
+.banner4 img {
+    width: 100%;
+}
+
+.banner4 img:hover {
     cursor: pointer;
 }
 
@@ -402,6 +446,11 @@ html {
     width: 100%;
     border-radius: 3%;
 }
+
+.combo .combo-banner {
+    width: 33.33333%;
+}   
+
 /* Ads */
 
 .content .ads {
@@ -409,6 +458,10 @@ html {
     display: flex;
     justify-content: space-between;
 
+}
+
+.content .ads .ads-img {
+    width: 50%;
 }
 
 .content .ads img {
@@ -537,6 +590,205 @@ html {
     
 }
 
+/* Menu */
+
+.content .menu {
+    display: flex;
+    flex-wrap: wrap;
+    /* Khi muốn flex đẹp, nếu trong thẻ div có thẻ img */
+    /* Thì phải set witdh và height cho img đó là 100%  */
+    background-color: white;
+    border-top: 2px solid #ccc;
+}
+
+.content .menu-item {
+    width: 25%;
+    display: inline-block;
+    padding: 20px;
+   
+}
+
+.content .menu-img img {
+    border: 7px solid #fff;
+    box-shadow: 2px 2px 7px 2px #d1d1d1;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.content .menu .menu-price-buy {
+    justify-content: space-between;
+    display: flex;
+    text-align: right;
+    padding-top: 24px;
+    align-items: center;
+}
 
 
+
+.content .menu .price {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.grey {
+    color: #ccc;
+}
+
+.yellow {
+    color:yellow;
+}
+
+
+.content .menu .sold {
+    font-size: 12px;
+
+}
+
+.content .menu .plus-btn {
+
+    color: var(--color-web);
+    font-size: 28px;
+}
+
+.content .menu .plus-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* footer */
+
+
+.footer {
+    
+
+}
+
+.footer .footer__content {
+    background-color: var(--footer-color);
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 32px;
+}
+
+.footer .footer__heading {
+    border-bottom: 1px solid white;
+}
+
+.footer .footer__heading__icon {
+    flex: 1;
+}
+
+.footer .footer__heading__subs {
+    text-align: justify;
+    flex:2;
+    border-right: 1px solid white;
+}
+
+.footer .footer__heading__subs h5 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer__heading__subs .input-subs {
+    width: 75%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer .footer__heading__subs .input-subs:focus {
+    border: none;
+    outline: none;
+}
+
+.footer .input-btn-subs {
+    position: relative;
+    display: flex;
+    width: 75%;
+}
+
+
+
+.footer .footer__heading__subs .btn-subs {
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 9px 0px;
+    color: white;
+    background-color: var(--color-web);
+    z-index: 2;
+    border: none;
+    margin-left: -10%;
+    width: 25%;
+}
+
+.footer .input-subs {
+    position: relative;
+}
+
+.footer .footer__heading__subs .subs-text {
+    position: absolute;
+}
+
+.footer__heading__contact {
+    flex: 2;
+}
+
+.footer .footer__heading__icon img {
+    width: 75%;
+}
+
+.footer .footer__content .footer__heading {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer .footer__content .input-subs {
+    display: flex;
+    
+}
+
+
+.footer .footer__heading__contact {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.footer .footer__heading__contact .icon-contact {
+    font-size: 48px;
+    padding: 8px 0px;
+}
+
+.footer .footer__heading__contact .icon-contact i:hover {
+    cursor: pointer;
+}
+
+.footer .footer_footing {
+    color: white;
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_footing .footer__footing__addr {
+    line-height: 1.8;
+}
+
+.footer .footer_footing .footer__footing__addr p{
+    font-size: 12px;
+}
+
+.footer .footer_footing .footer__footing__time {
+    line-height: 1.8;
+    font-size: 12px;
+}
+
+.footer .footer_footing .footer-calling {
+    font-size: 30px;
+    font-weight: bold;
+}
 

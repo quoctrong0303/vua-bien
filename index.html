@@ -7,6 +7,7 @@
     <title>Nhà hàng Vua Biển - Vua Biển Restaurant</title>
     <link rel="shortcut icon" href="https://vuacua.vn/storage/media/HFjY5yfF6XTgh5Dbs92URqCe1jESxqFtWTnhesql.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <script src="https://kit.fontawesome.com/11fdb00ab9.js" crossorigin="anonymous"></script>
 
@@ -17,15 +18,15 @@
         <div class="header">
             <div class="nav">
                 <div class="logo">
-                    <a href="">
+                    <a href="#">
                         <img src="https://vuacua.vn/storage/media/sNbX8pTkTZOMlrlVjTZ0nk0mcFLtutFGtBeAIh3h.png" alt="" class="logo__img">
                         <p class="logo__text">vua bien</p>
                     </a>
                 </div>
                 <div class="nav__left">
-                    <a href="" class="nav__link">Thực đơn</a>
+                    <a href="#menu" class="nav__link">Thực đơn</a>
                     <a href="" class="nav__link">Đặt bàn</a>
-                    <a href="" class="nav__link">Khuyến mãi</a>
+                    <a href="#sale" class="nav__link">Khuyến mãi</a>
                     <a href="" class="nav__link">Blogs</a>
                 <div class="nav__contact">
                     <a class="nav__link" href="">Liên hệ | </a>        
@@ -64,9 +65,9 @@
         <!-- End: header -->
 
         <div class="content">
-            <div class="row ">
+            <div class="row d-flex">
                 <!-- Begin: slider -->
-                <div class="slider col col-8">
+                <div class="slider col col-8 mt-16">
                     <a href=""><img src="https://vuacua.vn/storage/media/iYNYPfzNWJ8VmEHq2izfml6fgB7KXUv9YYekXGAr.jpeg" alt="" class="slider-img"></a>
                 </div>
                 <!-- End: slider -->
@@ -80,7 +81,7 @@
             </div>
 
             <!-- Begin: Flash sale-->
-            <div class="flash-sale">
+            <div id="sale" class="flash-sale">
                 <div class="flash-sale-tittle">
                     <a href=""><img src="https://vuacua.vn/themes/storefront/public/images/flash-img.png?v=1.1.96" class="flash-sale-icon"></a>
                     <p class="tittle-heading">
@@ -188,10 +189,10 @@
 
             <!-- Begin: Combo  -->
             <div class="combo">            
-                    <div class="combo-banner pr-12">
+                    <div class="combo-banner pr-24">
                         <img src="https://vuacua.vn/storage/media/N4eiN17fBLLQEIIwKHWazkkjrRo7YgJxLOsuraCw.jpeg" alt="" class="">
                     </div>
-                    <div class="combo-banner pr-12">
+                    <div class="combo-banner pr-24">
                         <img src="https://vuacua.vn/storage/media/v1CyiPRhg4aSXF0OLTNItLmsykypCDUvozDG3S4c.jpeg" alt="" class="">
                     </div>
                     <div class="combo-banner">
@@ -203,7 +204,7 @@
             
             <!-- Begin: ads -->
             <div class="ads">
-                <div class="ads-img"><a href=""><img src="https://vuacua.vn/storage/media/k0jAkrG9VzIKG1cK3ZR5fOHbN1olfr6hSTon97Y3.png" alt=""></a></div>
+                <div class="ads-img pr-24"><a href=""><img src="https://vuacua.vn/storage/media/k0jAkrG9VzIKG1cK3ZR5fOHbN1olfr6hSTon97Y3.png" alt=""></a></div>
                 <div class="ads-img"><a href=""><img src="https://vuacua.vn/storage/media/nFhlI95hBnqVfL5fqDU1zMUFRryvZQyFwiJBj5iT.jpeg" alt=""></a></div>
             </div>
             <!-- End: ads -->
@@ -272,16 +273,247 @@
                 </div>
             </div>
             <!-- Begin: menu -->
-            <div class="menu">
-
+            <div  id="menu" class="menu">
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/bSv5eQIcxvGWIfnLdJLLIMSwQ6uEX52LgxP5FxRM.jpeg" alt="">
+                        <p>Thịt càng cua Cà Mau gỡ sẵn (200g)
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">449.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 26</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/N6gQxu4xK01PSu9hGhEThjd4qWd7mRmYWm6iesN4.jpeg" alt="">
+                        <p>Nha Trang Lobster Box
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">579.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 27</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/Dp8vNwK6mqOK76SsPMgNv59fQTHBTkewXtLOxHYD.jpeg" alt="">
+                        <p>Cơm chiên càng cua xốt X.O
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">429.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 40</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/nes4vXIEvSXgIb8Tl1RfhTmw6kVmS1OexPBev3LS.jpeg" alt="">
+                        <p>Shrimp Box
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">159.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 21</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/YQxiFnwQFVdBPP6gcq0y6twCsx4DZAkJreB7QIoW.jpeg" alt="">
+                        <p>Crab Box Size L
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">749.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 23</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/iruUZ7Y8NuVFUaX88Rx9pF2FbNzqJEWMqHD07xrU.jpeg" alt="">
+                        <p>Crawfish Box
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">299.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 38</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/mBjdtzLBMZ270PkxoLSiVLKnAI6bjm2HawYf1714.jpeg" alt="">
+                        <p>Bánh bao gà xé tiêu đen
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">152.100₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 874</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/wqXNGdu2mEueywGLy0OOoIy9wCki09UAa1bAHTXg.png" alt="">
+                        <p>Cafe đen (330ml)
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">69.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 14</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/ltAWJ22MY9NYoRSgbdHdcorD35Mtf6WB9d1RR8Nj.jpeg" alt="">
+                        <p>Combo Hải Sản Kiểu Mỹ M
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">449.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 52</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="https://vuacua.vn/storage/media/bSv5eQIcxvGWIfnLdJLLIMSwQ6uEX52LgxP5FxRM.jpeg" alt="">
+                        <p>Thịt càng cua Cà Mau gỡ sẵn (200g)
+                        </p>
+                        <div class="menu-price-buy">
+                            <div class="">
+                                <i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i><i class="grey ti-star"></i>
+                                <p class="price">349.000₫
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="sold">Đã bán: 81</p>
+                                <i class="pt-8 plus-btn fas fa-plus-circle"></i>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+                
+            </div>
+            <!-- End: menu -->
+            <div class="banner3">
+                <img src="https://vuacua.vn/storage/media/lpSsbKkTqCkk3MWaUoywDyCUUPbVTsfzbhodtLbu.jpeg" alt="">
+            </div>
+            <div class="banner4">
+                <img src="https://vuacua.vn/storage/media/yV8ErlY0CPhu7djAqsfaKvbtN7p3c1LY8AD3UD6b.png" alt="">
+            </div>
+            
         </div>
+        <!-- End; content -->
         <div class="clear"></div>
-        <!-- End: menu -->
-        </div>
-
+        
+    
         <!-- Begin: footer -->
         <div class="footer">
-
+            <div class="footer__content">
+                <div class="footer__heading">
+                    <div class="footer__heading__icon">
+                        <img src="https://vuacua.vn/themes/storefront/public/images/vua-cua-vcr-logo-white.svg?v=1.1.96" alt="">
+                    </div>
+                    <div class="footer__heading__subs">
+                        <h5>
+                            Để lại địa chỉ email
+                            <br>
+                            để đăng ký nhận khuyến mãi nhé!
+                        </h5>
+                        <div class="input-btn-subs">
+                            <input class="input-subs" type="email" name="" id="" placeholder="Nhập địa chỉ email của bạn">
+                            <input class="btn-subs" type="submit" value="Đăng ký">
+                        </div>
+                        
+                    </div>
+                    <div class="footer__heading__contact">
+                        <p>Vua Cua đang ở rất gần bạn đấy!</p>
+                        <div class="icon-contact">
+                            <i class="ti-facebook"></i>
+                            <i class="ti-instagram"></i>
+                            <i class="ti-youtube"></i>
+                        </div>
+                        <p>Hãy kết nối & sẻ chia với chúng tôi nhé!</p>
+                    </div>
+                </div>
+                <div class="footer_footing">
+                    <div class="footer__footing__addr">
+                        <h2>NHÀ HÀNG VUA CUA</h2>
+                        <p>Công ty cổ phần thương mại dịch vụ Vua Cua 14 Phan Tôn, Phường Đakao, Quận 1</p>
+                        <p>ĐT: 0283 6203862. Email: cskh@vuacua.vn </p>
+                    </div>
+                    <div class="footer__footing__time">
+                        <div class="footer-calling">
+                            <i class="fas fa-phone"></i>&nbsp<span>1900 6333 87</span>
+                        </div>
+                        <p>Giờ hoạt động</p>
+                        <p>Nhà hàng: 10:00 - 23:00 (T2 - Chủ Nhật)</p>
+                        <p>Giao hàng tận nơi: 10:00 - 21:30 (T2 - Chủ Nhật)</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End: footer -->
 
