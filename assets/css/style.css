@@ -274,11 +274,15 @@ html {
 
 }
 
+.banner {
+    width: 33.33333%;
+}
+
 .banner .banner-img {
-    border-radius: 4%;
+    border-radius: 10px;
     float: right;
     height: 264px;
-    width: auto;
+    width: 100%;
     margin-left: 28px;
 }
 
@@ -384,7 +388,7 @@ html {
     margin-bottom: 8px;
     padding-top: 8px;
     border: 7px solid var(--color-web);
-    border-radius: 7%;
+    border-radius: 10px;
     box-shadow: 7px 7px 7px #d1d1d1;
 }
 .flash-sale .flash-sale-items a{
@@ -445,7 +449,7 @@ html {
 .combo img {
     height: 170px;
     width: 100%;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 
 .combo .combo-banner {
@@ -467,7 +471,7 @@ html {
 
 .content .ads img {
     width: 100%;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 
 /* menu sliders  */
@@ -485,7 +489,6 @@ html {
     gap: 44px;
     margin-top: 20px;
     justify-content: space-around;
-    height: 212px;
     background-color: white;
 }
 
@@ -506,7 +509,7 @@ html {
     width: 100%;
     border: 7px solid #fff;
     box-shadow: 2px 2px 7px 2px #d1d1d1;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 .content .menu-slider-items .menu-slider-item img:hover {
